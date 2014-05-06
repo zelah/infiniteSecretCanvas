@@ -140,17 +140,3 @@ ulonglong ulonglongCastUchar(uchar character){return(ulonglong)character;}
  
 void test(LHCA* lhca){test1(lhca,128*61,128*61);}
  
-int main()
-{
-    LHCA* lhca1=[LHCA new];
-    LHCA* lhca2=[LHCA new];
-    [lhca1 initialize];
-    [lhca2 initialize];
-    [lhca1 seed:'0':'5':'2':'9':'2':'0':'1':'4'];
-    test(lhca1);
-    printf("\n\n");
-    test(lhca2);
-    
-    return 0;
-}
- 
