@@ -132,11 +132,5 @@ ulonglong ulonglongCastUchar(uchar character){return(ulonglong)character;}
 -(uchar) eight{return state[7];}
 -(uchar) seed: (uchar) one : (uchar) two : (uchar) three : (uchar) four : (uchar) five : (uchar) six : (uchar) seven : (uchar) eight{state[0]=one;state[1]=two;state[2]=three;state[3]=four;state[4]=five;state[5]=six;state[6]=seven;state[7]=eight;return 0;}
 @end
-  
-  void test2(LHCA* lhca,ulonglong count){printf("%d",[lhca backward]);if(count==1){printf("\n");}else{test2(lhca,count-1);}}
- 
-  
-  void test1(LHCA* lhca,ulonglong count,ulonglong progress){if(progress==0){printf("\n\n");test2(lhca,count);}else{printf("%d",[lhca forward]);test1(lhca,count,progress-1);}}
- 
-void test(LHCA* lhca){test1(lhca,128*61,128*61);}
+
  
